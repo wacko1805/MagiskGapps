@@ -1,0 +1,6 @@
+id=Magisk-GApps
+name=Magisk GApps
+version=v0.1-alpha
+versionCode=7
+author=Wacko1805
+description=GApps that can be flashed in Magisk

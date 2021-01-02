@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<!--
+    This file contains permissions to be granted by default. Default
+    permissions are granted to special platform components and to apps
+    that are approved to get default grants. The special components
+    are apps that are expected to work out-of-the-box as they provide
+    core use cases. Granting these permissions could prevent issues on
+    some ROMs or non-clean installations.
+-->
+
+<exceptions>
+
+   <!--
+    The exceptions below have been set by NikGApps as factory defaults
+    -->
+
+    <exception
+            package="com.android.vending">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- SMS -->
+        <permission name="android.permission.SEND_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+        <permission name="android.permission.RECEIVE_MMS" fixed="false"/>
+        <permission name="android.permission.READ_CELL_BROADCASTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.apps.gcs">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.apps.messaging">
+        <!-- Camera -->
+        <permission name="android.permission.CAMERA" fixed="false"/>
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Microphone -->
+        <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- SMS -->
+        <permission name="android.permission.SEND_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+        <permission name="android.permission.RECEIVE_MMS" fixed="false"/>
+        <permission name="android.permission.READ_CELL_BROADCASTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.backuptransport">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.contacts">
+        <!-- Calendar -->
+        <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+        <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- SMS -->
+        <permission name="android.permission.SEND_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+        <permission name="android.permission.RECEIVE_MMS" fixed="false"/>
+        <permission name="android.permission.READ_CELL_BROADCASTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.dialer">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Microphone -->
+        <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.feedback">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.gm.exchange">
+        <!-- Calendar -->
+        <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+        <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+    
+    <exception
+            package="com.android.chrome">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.gms">
+        <!-- Calendar -->
+        <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+        <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+        <!-- Camera -->
+        <permission name="android.permission.CAMERA" fixed="false"/>
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Microphone -->
+        <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- Sensors -->
+        <permission name="android.permission.BODY_SENSORS" fixed="false"/>
+        <!-- SMS -->
+        <permission name="android.permission.SEND_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+        <permission name="android.permission.RECEIVE_MMS" fixed="false"/>
+        <permission name="android.permission.READ_CELL_BROADCASTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.googlequicksearchbar">
+        <!-- Calendar -->
+        <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+        <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+        <!-- Camera -->
+        <permission name="android.permission.CAMERA" fixed="false"/>
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Microphone -->
+        <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- Sensors -->
+        <permission name="android.permission.BODY_SENSORS" fixed="false"/>
+        <!-- SMS -->
+        <permission name="android.permission.SEND_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+        <permission name="android.permission.RECEIVE_MMS" fixed="false"/>
+        <permission name="android.permission.READ_CELL_BROADCASTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.gsf">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.gsf.login">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.packageinstaller">
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.setupwizard">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Network -->
+        <permission name="android.permission.REQUEST_NETWORK_SCORES" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.syncadapters.calendar">
+        <!-- Calendar -->
+        <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+        <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.syncadapters.contacts">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.tag">
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+    </exception>
+
+    <exception
+            package="com.google.android.talk">
+        <!-- Camera -->
+        <permission name="android.permission.CAMERA" fixed="false"/>
+        <!-- Contacts -->
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+        <!-- Location -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <!-- Microphone -->
+        <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+        <!-- Phone -->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.ADD_VOICEMAIL" fixed="false"/>
+        <permission name="android.permission.USE_SIP" fixed="false"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+        <!-- SMS -->
+        <permission name="android.permission.SEND_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_SMS" fixed="false"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+        <permission name="android.permission.RECEIVE_MMS" fixed="false"/>
+        <permission name="android.permission.READ_CELL_BROADCASTS" fixed="false"/>
+        <!-- Storage -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+
+</exceptions>
