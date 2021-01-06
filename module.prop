@@ -1,6 +1,6 @@
-id=Magisk-GApps
-name=Magisk GApps
-version=v0.1-alpha
+id=Magisk-GApps-core
+name=Magisk GApps Core
+version=v1.0-Core
 versionCode=7
 author=Wacko1805
 description=GApps that can be flashed in Magisk
