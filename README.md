@@ -1,8 +1,6 @@
-# Work in Progress!!
-# MagiskGapps 
-Fully funtional GApps packages for Magisk
+# MagiskGapps Source Code
+GApps packages for Magisk
 
-## About
-MG (Magisk GApps) is a GApps package for Magisk. MG can be installed with Magisk easily and can be uninstalled making MG easy for temporary GApps installation. 
+# [Download](https://sourceforge.net/projects/magiskgapps/files/)
 
-## [Download](http://mg.pixel-fy.com/)
+# [Homepage](https://mg.pixel-fy.com)
