@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ This XML file declares installer eligible for committing stage install.
+-->
+<config>
+  <whitelisted-staged-installer package="com.android.vending" />
+</config>

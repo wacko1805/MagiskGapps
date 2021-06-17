@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<!--
+This XML file declares packages eligible for rollback.
+-->
+<config>
+  <!-- Mainline modules (apk or apex) go here. -->
+  <rollback-whitelisted-app package="com.google.android.adbd" />
+  <rollback-whitelisted-app package="com.google.android.angle" />
+  <rollback-whitelisted-app package="com.google.android.captiveportallogin" />
+  <rollback-whitelisted-app package="com.google.android.cellbroadcast" />
+  <rollback-whitelisted-app package="com.google.android.conscrypt" />
+  <rollback-whitelisted-app package="com.google.android.documentsui" />
+  <rollback-whitelisted-app package="com.google.android.ext.services" />
+  <rollback-whitelisted-app package="com.google.android.extservices" />
+  <rollback-whitelisted-app package="com.google.android.ipsec" />
+  <rollback-whitelisted-app package="com.google.android.media" />
+  <rollback-whitelisted-app package="com.google.android.media.swcodec" />
+  <rollback-whitelisted-app package="com.google.android.mediaprovider" />
+  <rollback-whitelisted-app package="com.google.android.modulemetadata" />
+  <rollback-whitelisted-app package="com.google.android.networkstack" />
+  <rollback-whitelisted-app package="com.google.android.networkstack.permissionconfig" />
+  <rollback-whitelisted-app package="com.google.android.neuralnetworks" />
+  <rollback-whitelisted-app package="com.google.android.os.statsd" />
+  <rollback-whitelisted-app package="com.google.android.permission" />
+  <rollback-whitelisted-app package="com.google.android.permissioncontroller" />
+  <rollback-whitelisted-app package="com.google.android.resolv" />
+  <rollback-whitelisted-app package="com.google.android.sdkext" />
+  <rollback-whitelisted-app package="com.google.android.tethering" />
+  <rollback-whitelisted-app package="com.google.android.tzdata" />
+  <rollback-whitelisted-app package="com.google.android.tzdata2" />
+  <rollback-whitelisted-app package="com.google.android.wifi" />
+  <rollback-whitelisted-app package="com.google.mainline.telemetry" />
+  <!-- Mainline modules as apk-in-apex go here. -->
+  <rollback-whitelisted-app package="com.android.cellbroadcastreceiver" />
+  <rollback-whitelisted-app package="com.android.cellbroadcastservice" />
+  <rollback-whitelisted-app package="com.android.networkstack.tethering" />
+  <rollback-whitelisted-app package="com.google.android.cellbroadcastreceiver" />
+  <rollback-whitelisted-app package="com.google.android.cellbroadcastservice" />
+  <rollback-whitelisted-app package="com.google.android.hotspot2.osulogin" />
+  <rollback-whitelisted-app package="com.google.android.networkstack.tethering" />
+  <rollback-whitelisted-app package="com.google.android.providers.media.module" />
+  <rollback-whitelisted-app package="com.google.android.wifi.resources" />
+</config>

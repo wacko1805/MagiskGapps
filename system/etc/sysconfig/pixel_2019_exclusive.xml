@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These are configurations that should exist on Google's 2019 devices (and not newer/older) -->
+<config>
+    <!-- This defines the Photos preload feature for specifically the 2019 Pixel devices. -->
+    <feature name="com.google.android.apps.photos.PIXEL_2019_PRELOAD" />
+</config>

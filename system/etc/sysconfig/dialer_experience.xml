@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These are configurations that should exist on devices suppoted by Google Dialer. -->
+<config>
+    <!-- This is for preloaded Google Dialer to get play store update. -->
+    <feature name="com.google.android.apps.dialer.SUPPORTED" />
+</config>
