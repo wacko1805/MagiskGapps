@@ -119,7 +119,11 @@ ui_print "- |_______||___|___||   __||   __||_____|  "
 ui_print "-                   |__|   |__|            "
 ui_print "- "
 ui_print "- +------+------+------------+"
+<<<<<<< Updated upstream
 ui_print "- | Core | V1.0 | Android 11 |"
+=======
+ui_print "- | Core | V1.1 | Android 11 |"
+>>>>>>> Stashed changes
 ui_print "- +------+------+------------+"
 ui_print " "
 
