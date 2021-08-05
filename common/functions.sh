@@ -118,9 +118,9 @@ ui_print "- |    |  ||       ||  _  ||  _  ||__ --|  "
 ui_print "- |_______||___|___||   __||   __||_____|  "
 ui_print "-                   |__|   |__|            "
 ui_print "- "
-ui_print "- +------+------+------------+"
-ui_print "- | Core | V1.0 | Android 11 |"
-ui_print "- +------+------+------------+"
+ui_print "- +-----+------+------------+"
+ui_print "- | GMS | V1.1 | Android 11 |"
+ui_print "- +-----+------+------------+"
 ui_print " "
 
 # Check for min/max api version
