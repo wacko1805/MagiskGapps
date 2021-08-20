@@ -10,7 +10,9 @@ MagiskGApps is an open source GApps package to be used with Magisk. MagiskGApps 
  * It can be used to change other GApps packages previously installed, meaning a device with core gapps can be changed to stock without wiping the data partition
  * Super easy to flash and update
 
-
+## Requirements
+- Android 11 (r)
+- x86_64 Architecture (or any other than x86)
 
 # [Download](https://sourceforge.net/projects/magiskgapps/files/)
 
