@@ -1,8 +1,5 @@
-# MagiskGapps
-![SourceForge](https://img.shields.io/sourceforge/dt/magiskgapps?label=Downloads&style=for-the-badge )
-[![GitHub license](https://img.shields.io/github/license/wacko1805/MagiskGapps?style=for-the-badge)](https://github.com/wacko1805/MagiskGapps/blob/r/LICENSE)
-
-MagiskGApps is an open source GApps package to be used with Magisk. MagiskGApps is fully open source 
+![alt text](https://raw.githubusercontent.com/wacko1805/MagiskGapps/assets/images/magisk-3.png "Logo Title Text 1")
+MagiskGApps is a GApps package to be used with Magisk. 
 
 ## Why MagiskGApps?
 
@@ -11,9 +8,103 @@ MagiskGApps is an open source GApps package to be used with Magisk. MagiskGApps 
  * Super easy to flash and update
 
 ## Requirements
-- Android 11 (r)
-- x86_64 Architecture (or any other than x86)
+- Android 11 
+- 64-bit Architecture 
 
-# [Download](https://sourceforge.net/projects/magiskgapps/files/)
+# Downloads:
+* [Stock](https://sourceforge.net/projects/magiskgapps/files/r/Stock/)
+* [Basic](https://sourceforge.net/projects/magiskgapps/files/r/Basic/)
+* [Core](https://sourceforge.net/projects/magiskgapps/files/r/Core/)
+* [GMS](https://sourceforge.net/projects/magiskgapps/files/r/GMS)
+* [Add-ons](https://sourceforge.net/projects/magiskgapps/files/addons/)
 
-# [Homepage](https://mg.pixel-fy.com)
+
+# Apps:
+<details>
+<summary>Stock:</summary>
+<br>
+
+-   Google Clock
+-   Google Play Store
+-   Digital Wellbeing
+-   Vanced Manager
+-   Google Dialer
+-   Google Messages
+-   Google Contacts
+-   Google Drive
+-   Gmail
+-   Google Calculator
+-   Google/Pixel Setup  
+    Wizard
+-   Google Maps
+-   Google Photos
+-   GBoard
+-   Google Calendar
+-   Google Feedback
+-   Pixel Launcher
+-   Google Files
+-   Google
+-   Google Play Games
+ -   GMS
+-   Google Service Framework
+-   Google Calendar Sync
+-   Google contacts Sync
+-   ExtraFiles
+-   Google Carrier Services
+-   Device Health Services
+-   Android Device Policy
+-   Google Partner Setup
+-   Device Personalization  
+    Services
+-   Google Markup
+-   Google Sounds
+-   Google Wallpaper
+</details>
+
+
+<details>
+<summary>Basic</summary>
+<br>
+
+-   Google Clock
+-   Vanced Manager
+-   Digital Wellbeing
+-   Google Dialer
+-   Google Messages
+-   Google Contacts
+  
+
+### Behind the scenes:
+
+  
+-   GMS
+-   Google Service Framework
+-   Google Calendar Sync
+-   Google contacts Sync
+-   ExtraFiles
+-   Google Carrier Services
+</details>
+
+
+<details>
+<summary>Core</summary>
+<br>
+
+-   Google Play Store
+-   GMS
+-   Google Service Framework
+-   Google Calendar Sync
+-   Google contacts Sync
+-   ExtraFiles
+</details>
+
+<details>
+<summary>GMS</summary>
+<br>
+
+-   Google Service Framework
+-   Google Calendar Sync
+-   Google contacts Sync
+-   ExtraFiles
+</details>
+
