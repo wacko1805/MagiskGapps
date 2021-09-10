@@ -1,4 +1,4 @@
-## What you see:
+-   <B>What you see:</B>
 -   Google Clock
 -   Vanced Manager
 -   Digital Wellbeing
@@ -7,7 +7,7 @@
 -   Google Contacts
   
 
-## Behind the scenes:
+-   <b>Behind the scenes:</b>
 
 -   GMS
 -   Google Service Framework
