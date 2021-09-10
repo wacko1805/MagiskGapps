@@ -1,4 +1,4 @@
-## What you see:
+-   <b>What you see:</b>
 *   Google Clock
 *   Google Play Store
 *   Digital Wellbeing
@@ -22,7 +22,7 @@
 *   Google Play Games
   
 
-## Behind the scenes:
+-   <b>Behind the scenes:</b>
 
 *   GMS
 *   Google Service Framework
