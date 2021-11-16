@@ -1,7 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/wacko1805/MagiskGapps/assets/images/magisk-3.png "Logo Title Text 1")
 MagiskGApps is a GApps package to be used with Magisk. 
 
-### Android 12 MagiskGApps coming soon!
+# Android 12 MagiskGApps coming soon!
 
 ## Why MagiskGApps?
 
