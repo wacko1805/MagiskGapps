@@ -23,7 +23,7 @@ MagiskGApps is a GApps package to be used with Magisk.
 
 # Apps:
 <details>
-<summary>Stock:</summary>
+<summary>Stock</summary>
 <br>
 
 -   Google Clock
