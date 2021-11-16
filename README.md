@@ -19,7 +19,7 @@ MagiskGApps is a GApps package to be used with Magisk.
 * [Core](https://sourceforge.net/projects/magiskgapps/files/r/Core/)
 * [GMS](https://sourceforge.net/projects/magiskgapps/files/r/GMS)
 * [Add-ons](https://sourceforge.net/projects/magiskgapps/files/addons/)
-
+* There will be no Full or anything above stock due to the file being to big for magisk manager to handle!
 
 # Apps:
 <details>
