@@ -1,6 +1,9 @@
-id=Magisk-GApps-core
-name=Magisk GApps Core
-version=v1.0-Core
-versionCode=7
-author=Wacko1805
-description=GApps that can be flashed in Magisk
+id=nikgapps
+name=NikGapps
+version=Magisk
+versionCode=1
+author=Nikhil Menghani
+description=Custom Gapps Build
+support=https://forum.xda-developers.com/showthread.php?t=3915866
+donate=https://www.paypal.me/inikhilmenghani
+minMagisk=1500

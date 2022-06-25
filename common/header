@@ -1,0 +1,14 @@
+#
+# Addon.d script created from AFZC tool by Nikhil Menghani
+#
+
+ps | grep zygote | grep -v grep >/dev/null && BOOTMODE=true || BOOTMODE=false
+$BOOTMODE || ps -A 2>/dev/null | grep zygote | grep -v grep >/dev/null && BOOTMODE=true
+
+# [ ! $BOOTMODE ] && [ -z "$2" ] && exit
+. /tmp/backuptool.functions
+
+nikGappsDir="/sdcard/NikGapps"
+
+nikGappsAddonLogFile="/sdcard/NikGapps/addonLogs/NikGapps_addon.log"
+mkdir -p "$(dirname $nikGappsAddonLogFile)";

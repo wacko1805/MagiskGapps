@@ -1,0 +1,528 @@
+- date: 20th April 2022 (Android SL, S, R and Q Canary Release)
+  changes:
+      - item: Integrate Debloater with Gapps Package (debloater will run first if debloater.config is configured)
+      - item: Fixed Flipendo not installing
+      - item: Fixed Data transfer tool not working on android 10, 11 on some Roms
+      - item: Add Velvet and GoogleAssistant to GoogleSearch AppSet
+      - item: Update config version to v22
+      - item: Fixed Velvet causing bootloop in some cases
+- date: 13th April 2022 (Android SL, S, R and Q Release)
+  changes:
+      - item: Android 12.1 (12L) release
+      - item: Many addon.d fixes (faster ota update and fixes)
+      - item: Fixed Pixel Launcher and Setup Wizard for android 12.1 release
+      - item: Removed Vanced Manager (will add back as an addon later)
+      - item: Fixed an issue which requires formatting /data partition to boot
+      - item: use addon_version = 3 (dropping v2 support)
+      - item: Fixed Aosp apps not being deleted for some users
+      - item: Dropped Vanced and Adaway support as those are non-gapps
+      - item: Enforce Android Auto to be clean flashed only to avoid unnecessary issues
+      - item: Add Google Talkback addon (for those who wants to include them in custom builds)
+      - item: Script improvements
+      - item: nikgapps config version updated to v21
+- date: 28th Feb 2022 (Android S, R and Q Canary Release)
+  changes:
+      - item: Fixed installation issues of some apps (to system_ext) in android 10
+- date: 22nd Feb 2022 (Android S, R and Q Release)
+  changes:
+      - item: Introduce Smart Installation to address storage full issues
+      - item: Added space check before installing packages to ensure that system is never left into inconsistent state
+      - item: Revamped and improved NikGapps uninstallation mechanism
+      - item: Fixed an issue where custom locations for nikgapps.config were not recognized
+      - item: A lot of installer script improvements and fixes under the hood
+      - item: Made gms optimization configurable (using gms_optimization config starting v20)
+      - item: Control all the features of nikgapps.config through config builds
+      - item: Fixed an issue where dirty flashing Gboard failed even when Gboard was originally clean flashed
+      - item: nikgapps.config bumped up to v20
+      - item: Changed addon script name from <50<package>.sh to <51-package>.sh to let Rom script execute first
+      - item: Abort when unknown mode is detected
+      - item: Addon.d improvements
+      - item: Revert back to google setup wizard as default (flash PixelSetupWizard addon for pixel setup wizard)
+- date: 27th Jan 2022 (Android S, R and Q Release)
+  changes:
+      - item: Hotfix Update - Fixes notification delays for some people due to gms optimization
+- date: 25th Dec 2021 (Android S, R and Q Release)
+  changes:
+      - item: Fixed aosp dialer being unset as default dialer even when GoogleDialer was not flashed (like with core package)
+      - item: Fixed installing a few apps such as GoogleWallpaper on android 10
+      - item: Fixed gapps size being miscalculated in some scenarios
+      - item: Introduce use_zip_config value starting nikgapps.config v19 to use nikgapps.config from zip while installing
+      - item: Update YouTube Vanced apps to latest versions (Vanced YouTube - 16.29.39, Music - 4.57.52, Manager - 2.6.2)
+      - item: Drop PixelTips, GoogleTalkback as those aren't so much useful, Move GoogleTTS from full to separate addons
+      - item: Bring back PixelSetupWizard for now (and also include it in omni, stock and full)
+      - item: Installer script improvements
+      - item: Playstore Updates (25th Dec 2021)
+- date: 18th Oct 2021 (Android S, R and Q Release)
+  changes:
+      - item: Android 12 bring up
+      - item: a lot of mount fixes (thanks to osm0sis)
+      - item: fix DPS (also known as ASI) crashes
+      - item: Fix GoogleFiles deleting DocumentsUI on android 10 when it shouldn't delete it
+      - item: config releases - add more validations to ensure the config files are not breaking the workflows
+      - item: config releases - speed up the execution
+      - item: drop Flipendo from gapps (addon will still be available) and Pixelize (gotta stick to google stuff, pixel isn't for every device/rom) AppSet
+- date: 18th Sept 2021 (Android R and Q Release)
+  changes:
+      - item: Update Google Photos, Calendar, Duo, Gmail, Calculator and Clock with Android 12's Material You design
+      - item: Add changes to support unlimited backup with google photos
+      - item: Find the available size of /system correctly on devices like OnePlus7T
+      - item: Fix the addon.d implementation of Debloater
+      - item: Fix some instances of modified nikgapps.config not being recognized
+      - item: Don't abort when system size is 0
+      - item: Improve how partition is identified during size calculations
+      - item: Playstore Updates (18th Sept)
+- date: 15th Aug 2021 (Android R and Q Release)
+  changes:
+      - item: Ability to flash Addons on top of other gapps and Roms with prebuilt gapps
+      - item: Fix modified nikgapps.config being overridden by stock nikgapps.config in some cases
+      - item: Ability to modify nikgapps.config from the zip file to customize the installation (for those who sideload zip)
+      - item: nikgapps.config version updated to 17 (recommend to use this to build custom gapps builds)
+      - item: Remove Eleven with installation of YouTube Music (both stock and vanced)
+- date: 04th Aug 2021 (Android R and Q Release)
+  changes:
+      - item: Update GoogleChrome to v90 (Android R)
+      - item: Delete AOSP Files with installation of GoogleFiles
+      - item: nikgapps.config version updated to 16 (recommend to use this to build custom gapps builds)
+      - item: Update YouTube Vanced to v16.20.35, Vanced Music to v4.30.51, Vanced manager to v2.6.0
+      - item: Playstore updates (4th August)
+- date: 18th July 2021 (Android R and Q Release)
+  changes:
+      - item: Fix priv-app permissions not being generated when the application manifest was broken
+      - item: Playstore updates (Android R) (18th July)
+- date: 4th July 2021 (Android R and Q Release)
+  changes:
+      - item: Fix unzip command failing to recognize '-p' arg and eventually failing the installation (thanks to @glx33807 and @OneWayGamer)
+      - item: Allow dirty flashing Gboard/Clock upon dirty flashing Rom
+      - item: Script Optimization (comparatively faster installation)!
+      - item: Rename NikGapps log name to reflect device and file name
+      - item: Abort the installation when system available size is 0
+      - item: Fix gapps failing for devices not having /system as block
+- date: 27th June 2021 (Android R and Q Release)
+  changes:
+      - item: Fix NikGapps addon.d execution conflicting with Magisk addon.d execution
+      - item: Fix Potential Crashes with Google Playstore
+      - item: Fixes with Mounting product and system_ext partitions
+      - item: Update GoogleWallpaper
+      - item: Update nikgapps.config to reflect version (v15 being the latest)
+- date: 1st June 2021 (Android R and Q Release)
+  changes:
+      - item: Add support for android 11 go packages
+      - item: Add support for go packages in config releases
+      - item: Build Go Packages addon too
+      - item: Script improvements
+      - item: set InstallPartition=default as default value to make it simpler
+      - item: Update nikgapps.config to v14
+      - item: Ability to include addons as part of your custom build in config-releases
+      - item: Swap Google Recorder (moved to stock) and Google Play Games (moved to full)
+      - item: Remove LOS Recorder with installing Google Recorder
+      - item: Clean up /dev/tmp to prevent recovery from crashing in middle of the installation
+      - item: Fix finding block on dynamic_partitions
+- date: 16th May 2021 (Android R and Q Release)
+  changes:
+      - item: Update how Busybox is installed
+      - item: Add support for system_ext partition (hopefully helps with storage full issue)
+      - item: Rebase the installer script (optimized to a great extent)
+      - item: Dynamically choose which partition to install gapps to (the installer will pick the partition which is writable)
+      - item: Prevent GBoard and GoogleClock addons from flashing before first boot (this needs to be flashed before first boot)
+- date: 1st May 2021 (Android R and Q Release)
+  changes:
+      - item: Fix bootloop with OTA update on A/B devices
+- date: 24th April 2021 (Android R and Q Release)
+  changes:
+      - item: Update Google Setup Wizard associated apps (R)
+      - item: Add Flipendo to Omni, Stock and Full package (R)
+      - item: Installer script improvements
+- date: 20th April 2021 (Android R and Q Release)
+  changes:
+      - item: Playstore updates (R)
+      - item: Mounting fixes (more details https://github.com/nikhilmenghani/build/commits/main)
+- date: 4th April 2021 (Android R and Q Release)
+  changes:
+      - item: Addon v3 support
+      - item: Add support for GoogleDuo, GoogleDocs, GoogleSlides, GoogleSheets
+      - item: Playstore Updates (4th April)
+- date: 28th Jan 2021 (Android R and Q Release)
+  changes:
+      - item: Added missing Hotward Permissions
+      - item: Playstore Updates (28th Jan)
+- date: 27th Jan 2021 (Android R and Q Release)
+  changes:
+      - item: Fixed YouTube Vanced Root version not working
+      - item: Fixed Android tv remote app crash
+      - item: Add missing GBoard properties
+      - item: Ship GoogleRecorder 2.1
+      - item: Playstore Updates (27th Jan)
+- date: 24th Jan 2021 (Android R and Q Release)
+  changes:
+      - item: Fixed an issue where sideloading of NikGapps packages failed
+      - item: Fixed an issue where the permissions were resetting upon dirty flashing NikGapps
+      - item: Mounting fixes (require feedback from users with dynamic partitions on space issue)
+      - item: Many under the hood improvements
+- date: 31st Dec 2020 (Android R, Q and P Release)
+  changes:
+      - item: Uninstall the addons/gapps packages with -1 config (mode=uninstall is optional now)
+      - item: Calculate partition size and gapps size (based on customized nikgapps.config)
+      - item: Added support for flashing NikGapps after first boot (for space issue with dynamic partitions)
+      - item: Fixed an issue where YouTube Vanced addon failed to install after ota update
+      - item: Remove more aosp apps (SimpleGallery, SimpleCalendar)
+      - item: Playstore Updates (31st Dec)
+- date: 12th Dec 2020 (Android R and Q Release)
+  changes:
+      - item: Install gapps to /system partition in devices with dynamic partitions (should fix no space issue for several users) 
+      - item: Introduced more addon.d configs to control addon.d execution (read more in nikgapps.config file from the zip) 
+      - item: Fixed duplicate values coming in nikgapps.config causing issues
+      - item: Ship working versions of Google Maps, Drive, Google Recorder
+      - item: Remove GmsCore folder with installation of GmsCore
+      - item: avc denied error should be fixed with this update
+      - item: Playstore Updates (12th Dec)
+- date: 22nd Nov 2020 (Android R and Q Release)
+  changes:
+      - item: Feature to uninstall any Package/Addon added (more info can be found on nikgapps.config blog)
+      - item: Fixed several apps (such as GooglePhotos, PixelLiveWallpapers) not showing up even when they were installed
+      - item: Fixed issues with Google Phone (you'll be able to update it properly)
+      - item: Fixed SetupWizard appearing on notification bar even after going through setup wizard process
+      - item: A lot of code optimization in installer script
+      - item: Many new things added in nikgapps.config (listed Packages under AppSet so you can control it)
+      - item: Playstore Updates (22nd Nov)
+- date: 16th Nov 2020 (Android R and Q Release)
+  changes:
+      - item: Android Auto, DeviceSetup (i.e. Android for Work) in full package (R and Q)
+      - item: More robust GMS Optimization (R and Q)
+      - item: Added Google TTS, Google Talkback (Q)
+      - item: Added google webview, trichromelibrary (Q)
+      - item: Fix aosp apps not being deleted during addon.d execution (Q)
+      - item: Improvement in installer scripts (R and Q)
+      - item: Moved DPS to Macro so that we don't have to ship it with Pixel Launcher AppSet (R and Q)
+      - item: Updated Vanced Gms to latest version (can be found in @NikGappsSupport telegram group)
+      - item: Playstore Updates (16th Nov)
+- date: 25th Oct 2020 (Android R Release)
+  changes:
+      - item: Added Google TTS, Google Talkback
+      - item: Added google webview, trichromelibrary (should resolve lags issue in chrome)
+      - item: Moved certain pixel launcher overlays in Pixelize Package
+      - item: Added PixelLauncher from Pixel5
+      - item: Fixed Google Drive not opening issue
+      - item: Added swipelibrary with gboard
+      - item: Faster installation (script changes)
+      - item: Set several apps by default (Google Dialer as default phone, Google Velvet as default assistant)
+      - item: Fix aosp apps not being deleted during addon.d execution
+      - item: Updated Pixel live wallpaper from Pixel5
+      - item: Updated Vanced Gms to latest version
+      - item: Dropped Google Play Music in favor of stock YouTube Music
+      - item: Playstore Updates (25th Oct)
+- date: 10th Oct 2020 (Android R and Q Release)
+  changes:
+      - item: Fixed Pixelize Package failing to enable Pixel Setup Wizard (You should get PixelSetupWizard if you sent Pixelize=1)
+      - item: Shipped a working messages app (The one that is compatible with shipped Google Play Services)
+      - item: Addons Updated (10th Oct)
+      - item: Playstore Updates (10th Oct)
+- date: 08th Oct 2020 (Android R and Q Release)
+  changes:
+      - item: Fixed select option not working in Recent Screen
+      - item: Revamped NikGapps architecture to implement AppSets (check notes/website for more details)
+      - item: Add pixelize AppSet that will enable pixel features such as PixelSetupWizard, PixelConfigs
+      - item: Remove styles and wallpaper to avoid conflicts with Rom
+      - item: Removed the overlay that was causing biometrics to fail in app authentication
+      - item: Removed Lawnchair from NikGapps packages (Q and R) since the development is stopped, Add Pixel Launcher instead, you can flash Lawnchair addon to get Lawnchair
+      - item: Fix Debloater not debloating in some scenarios for A/B devices, Also fix logging for A/B devices
+      - item: Add Eclipse Pixel Live Wallpaper (damn cool!) in pixel live wallpapers addon
+      - item: Playstore Updates (08th Oct)
+- date: 26th Sept 2020 (Android R Release only)
+  changes:
+      - item: Fix 4G/LTE not working due to APN resetting
+      - item: Fixed an issue where Google Lens was not opening in Google Photos 
+      - item: Fixed Chrome sync issue out of the box (without contacts permissions)
+      - item: Remove RevengeOS Messages and Calculator with Google Messages and Google Calculator installation respectively
+      - item: Playstore Updates (25th Sept)
+- date: 23rd Sept 2020 (Android R Release only)
+  changes:
+      - item: Added DevicePersonalizationServices starting Macro (Live Caption Works)
+      - item: Added Google Files (Macro/Stock/Full)
+      - item: Added GoogleDialer, PixelLauncher, GoogleFiles overlays
+      - item: Fixed Permission (PACKAGE_USAGE_STATS) denial with Pixel Launcher
+      - item: Set Location Permissions to GoogleChrome for those who were facing issues with account sync in Chrome
+      - item: Added all the pixel overlays (icons, accent, etc to get more Pixel feel)
+      - item: Improve addon.d scripts to a huge extent
+      - item: Improvement in installer scripts
+- date: 16th Sept 2020 (Android R Release only)
+  changes:
+      - item: Added Pixel Launcher (macro/stock/full) (Yay? :P)
+      - item: Fixed Google Chrome account sync/sign in issue
+      - item: Fixed Google Markup crash
+      - item: Remove unnecessary Google Dialer overlays
+- date: 14th Sept 2020 (Android R Release only)
+  changes:
+      - item: Fixed PixelSetupWizard (Test Google Restore and let me know how it works out for you)
+      - item: Move Pixel Setup Wizard overlays to /system/overlay 
+      - item: Improve the installer script (in support for android 11)
+- date: 12th Sept 2020 (Android R Release only)
+  changes:
+      - item: Initial NikGapps R (Android 11) release
+      - item: Everything Works except for SetupWizard! (will be fixed with upcoming releases)
+      - item: NikGapps-full without setupwizard is also uploaded which should be a stable one with almost all the apps targeting android 11
+      - item: I've also uploaded the builds with SetupWizard which can be skipped using nikgapps.config (if someone doesn't want full package and want macro or stock)
+      - item: Improved logs structure
+      - item: Removed Lawnchair since it is not yet compatible with android 11 (will try to add Pixel Launcher with future releases)
+      - item: YouTube Vanced v14 is shipped with the build
+      - item: Playstore Updates (12th Sept)
+- date: 1st Sept 2020
+  changes:
+      - item: Setup InstallPartition config such that, user can install gapps to desired location (This is more for Developers)
+      - item: Fixed an issue where LawnchairRecentsProvider was installed by default
+      - item: Fixed an issue where GooglePhone was not appearing on Playstore if InstallPartition was set to system
+      - item: Separate GoogleSetupWizard and PixelSetupWizard addon
+      - item: Improved logs structure
+      - item: Addon Updates (1st Sept)
+      - item: Playstore Updates (1st Sept)
+- date: 25 Aug 2020
+  changes:
+      - item: Revamped Addon.d implementation (One master addon to control all the Packages)
+      - item: Log the addon execution in one single file (can be found at /sdcard/NikGapps/Logs folder)
+      - item: Fixed mounting issues with Dynamic Partitions (Huge Thanks to @merothh for working together on this)
+      - item: Fixed conflicts with Magisk addon (Now dirty flashing will also flash magisk without issues if magisk addon is present)
+      - item: Fixed AOSP Apps not deleting after dirty flash in some cases
+      - item: Fixed location crash issue with vanced addon
+      - item: Fixed mounting issue for pie and older version (addons can be flashed on older versions)
+      - item: Improved logging functionality to a greater extent
+      - item: Remove ExtraFiles and ExtraFiles from nikgapps.config (to prevent users from accidentally setting it to 0)
+      - item: Remove AOSP Dialer with Google Dialer installation (set GoogleDialer=2 in nikgapps.config if you want to keep aosp dialer)
+      - item: Addon Updates (25th Aug)
+      - item: Playstore Updates (25th Aug)
+- date: 23 July 2020
+  changes:
+      - item: Everything from last Experimental Release (highlights below)
+      - item: Fixed mounting issues with newer twrp version (3.4)
+      - item: Add support for Devices with Dynamic Partitions (Thanks @merothh)
+      - item: Fix Priv-app permissions generation with MaxSdkVersion in it
+      - item: Installation will now fail if there is no space left on the device
+      - item: Installation will now fail for devices not having NikGapps support
+      - item: Made WipeDalvikCache configurable (set WipeDalvikCache=0 in nikgapps.config if you want the installer to skip wiping dalvik cache)
+      - item: nikgapps.config updated with package names that makes sense (let me know if you still want me to add description)
+      - item: Addons Updated (Support for twrp 3.4 and Version Updates till 23rd July)
+      - item: Debloater v6 Updated (Support for twrp 3.4)
+      - item: Playstore Updates (23rd July)
+- date: 24 June 2020 (Experimental)
+  changes:
+      - item: Revamped the whole mounting mechanism
+      - item: Fixed mounting issues with newer twrp version (3.4)
+      - item: Add support for Devices with Dynamic Partitions (Thanks @merothh)
+      - item: Made nikgapps.config location portable (now installer will also read the file from the same directory gapps zip is)
+      - item: Remove AOSP Browser, Email, Gallery with Chrome, Gmail, Photos installation
+      - item: Updated nikgapps.config with Go Apps (You can now configure Go apps installation too)
+      - item: Added Android Device Policy to support Work Profile (Starting Stock Package)
+      - item: Moved Lawnchair to priv-app as it is reported to work better being privileged app
+      - item: Debugging logs will now be better at reading (nikgapps.log)
+      - item: Playstore Updates (24th June) 
+- date: 07 June 2020
+  changes:
+      - item: Added a config 'InstallPartition' to choose between 'system' and 'product' while installing
+      - item: Enable blur on regular picture in Photos app
+      - item: Added Gmail Go in Go packages
+      - item: Fixed crash with PixelWallpapers Addon (Need to be flashed over NikGapps package)
+      - item: Support to Flash over Rom with Existing Gapps
+      - item: Everything from Experimental Build (check older changelog)
+      - item: Playstore Updates (07th June) 
+- date: 10 May 2020 (Experimental)
+  changes:
+      - item: Fixed Dialer not supported message in Google Dialer
+      - item: Fixed Crashes with Device Personalization Services
+      - item: Fixed Device Health Services crash
+      - item: Updated nikgapps.config (finally, I know :P)
+      - item: Separated LawnchairRecentsProvider from Lawnchair (use nikgapps.config to include) 
+      - item: Fixed EOL issue with nikgapps.config
+      - item: Added ActionServicesOverlay, WellbeingOverlay, Google Dialer Overlays
+      - item: More stuff that I forgot 
+      - item: Playstore Updates (10th May) 
+- date: 27 April 2020
+  changes:
+      - item: Introducing NikGapps Go! A lite version of gapps
+      - item: Fixed backup/restore issue with pixel setup wizard
+      - item: Fixed Bad/Rom Recovery issue reported for some devices
+      - item: Added Lawnchair recents provider
+      - item: Made Lawnchair a system app
+      - item: Addons are updated! 
+      - item: Playstore Updates (27th April) 
+- date: 09 March 2020
+  changes:
+      - item: Included everything from the last experimental build.
+      - item: Added missing media effects library
+      - item: Added logging mechanism in addon.d scripts (will be generated in /sdcard/NikGapps/addonLogs)
+      - item: Debloater-v4! Made the debloater more stable with additional conditions (to avoid bootloop)
+      - item: Updated all the Addons
+      - item: Latest version of Google apps (09th Mar)
+- date: 10 Feb 2020 (Experimental)
+  changes:
+      - item: Added Pixel Tips
+      - item: Added Pixel Setup Wizard and its overlays.
+      - item: Set sms, storage and location permissions to google play services by default.
+      - item: Updated chrome to v80.
+      - item: Updated calendar sync adapter to match android P+.
+      - item: Updated Lawnchair to latest alpha version
+      - item: Kept Aosp Dialer!
+      - item: Remove Device Personalization Services since its FCing and we're yet to find the solution. (an addon will be provided in support group which you can flash to get it back)
+      - item: Playstore Updates (till 10th Feb)
+- date: 19 Jan 2020
+  changes:
+      - item: Fixed operand issue (nikgapps.config should work accurately like before).
+      - item: Fixed permission issues with Google Play Services
+      - item: Fixed issues with contact sync
+      - item: Playstore Updates (till 19th Jan)
+- date: 12 Jan 2020
+  changes:
+      - item: Fixed NikGapps installation issues with config values not reflecting in installation.
+      - item: Added a nikgapps.config value "2" to retain aosp apps (set the value to 2 if you don't want the installer to delete the aosp counter part of google app).
+      - item: AOSP Dialer is now deleted by default starting omni package to maintain the uniformity (set Dialer=2 in nikgapps.config before flashing if you want the gapps to skip removing aosp dialer).
+      - item: YouTube Vanced Dark/Black installer fixed (Dark was installing black and visa versa).
+      - item: The installer now clears Dalvik Cache (helps when the changes are not reflected because of dalvik cache).
+      - item: Updated all the Addons (which had a version updates).
+      - item: Latest version of Google apps (12th Jan)
+- date: 17 Dec 2019
+  changes:
+      - item: Back to Latest Lawnchair alpha version for Q releases
+      - item: Enable Google Apps Updates from PlayStore (for apps such as Digital Wellbeing, Google Sound Recorder) 
+      - item: Add support for Next Generation Assistant
+      - item: Add Pixel Live Wallpapers (So Amazing! Must Check out!) addon
+      - item: Removed Pixel Live Wallpaper from Full package since there is a addon package available now
+      - item: Added Chrome, Photos, AdAway Addons
+      - item: Removed MixPlorer Addon for now (since it causes issues with Havoc Rom, will add it back again once I fix the issue)
+      - item: Stability Improvements
+      - item: Latest version of Google apps (17th Dec)
+- date: 03 Dec 2019
+  changes:
+      - item: Removed Debloating from gapps installation to avoid unnecessary bootloops (Flash latest Debloater.zip if you want to debloat anything) 
+      - item: Fixed issues with payzapp installation
+      - item: Added Lawnchair 2 (stable)
+      - item: Added shared maps library support in favor of apps depending on maps library
+      - item: Fixed an issue where dirty flashing a Rom required setting permissions to all the apps again
+      - item: Installation Script improvements
+      - item: Fixed an issue with MixPlorer addon causing Force Close of default Files App
+      - item: Added Device Personalization Services (full package)
+      - item: Latest version of Google apps (3rd Dec)
+- date: 24 Nov 2019
+  changes:
+      - item: Fixed gapps not getting installed when the zip was placed in a folder with spaces in it (flashing with ext sdcard should work now)
+      - item: Fixed - 'Busybox installation Failed'
+      - item: Bootloop with various Roms should be fixed now
+      - item: Fixed a bug in addon.d script where dirty flashing did not delete the necessary files
+      - item: GMS Optimization is back! disable 'Find my device' option from settings 
+      - item: Lawnchair and Lawnfeed added (starting stock package)
+      - item: More improvements to Addon.d
+      - item: More Addons (Google Recorder, Lawnchair)
+      - item: Removing Bromite for now (since it is causing bootloops for many)
+      - item: Stability Improvements
+      - item: Latest version of Google apps (24th Nov)
+- date: 11 Nov 2019
+  changes:
+      - item: Fixed storage and sms permissions by whitelisting soft restrictions on GooglePlayServices
+      - item: Fixed 'Checking for update' taking forever to load in GoogleSetupWizard
+      - item: addon.d v2 - added support for OTA installation (Introducing Debloater v2 with this support)
+      - item: Use Rom Specific system partition ($S) to perform restore/delete actions during addon.d script execution 
+      - item: addon.d script now gets written to SAR driven /system partition
+      - item: Removed unnecessary ls -al /tmp command from addon.d
+      - item: Fixed chmod, chcon errors in addon.d script
+      - item: Added Google Sound Recorder (Starting Full Package)
+      - item: Added Digital Wellbeing (Starting Basic Package)
+      - item: Default Debloater.config doesn't delete anything now
+      - item: Fixed the typo while removing apps from /system/app/product folder
+      - item: Added Installation Logging (this will help users share the necessary logs for faster resolution to the issues they experience). File is created in /sdcard/NikGapps/logs folder
+      - item: Show Progress in Progress bar while installing packages
+      - item: Digital NikGapps logo added in gapps installer script
+      - item: Stability Improvements
+      - item: Latest version of Google apps (11th Nov)
+- date: 14 Oct 2019
+  changes:
+      - item: addon.d v2 support (now works on A/B devices too).
+      - item: Play Store not showing quick changelog box while updating an app fixed
+      - item: All the various NikGapps packages now available for Android Q.
+      - item: Introduce debloater.config with NikGapps-Debloater itself (a config to remove unwanted apps/files). Instructions present in config file.
+      - item: Push nikgapps.config and debloater.config to /sdcard/NikGapps by default with installer so you can just go to the folder and edit the config file.
+      - item: improved the installer (aborts the installation when installation is faulty without impacting the system).
+      - item: Latest version of Google apps (14th Oct)
+- date: 12 Sep 2019
+  changes:
+      - item: Support Priv-app Whitelist (Fixed boot loop on Roms like Omni)
+      - item: Separated the Addon.d script for individual packages (Fixed addon.d override issue)
+      - item: Introducing nikgapps.config (control the installation as you need now)
+      - item: Revamped the NikGapps implementation method
+      - item: Reduced the zip size (implemented compression - core - 66.2 mb only)
+      - item: Moved the addon packages to single zip (configuration will allow you to control the installation)
+      - item: Beautified the installer and addon.d restoring process now shows the progress
+      - item: Latest Google Apps (12th Sept)
+- date: 17 Aug 2019
+  changes:
+      - item: Remove Aosp Apps now removes gallery also
+      - item: Added Remove - Digital Wellbeing zip to debloat Digital Wellbeing
+      - item: Updated all the Addon apps to latest version
+      - item: Added MixPlorer and Google Play Music Addon
+      - item: Introducing NikGapps Go Addon (Lite package including Go apps)
+      - item: Fixed FCs with CrDroid Rom 
+      - item: Latest Google Apps (17th Aug) 
+- date: 04 Aug 2019
+  changes:
+      - item: A lot of Addons added
+      - item: Script changes to keep aosp dialer as it is for those who prefer call recording. (added a separate zip to delete aosp dialer, can be found in Addon Packages) 
+      - item: Updated lawnchair to latest version
+      - item: Added Google Markup in Omni Package
+      - item: Latest Google Apps (4th Aug) 
+- date: 22 Jul 2019
+  changes:
+      - item: Removed Chrome from stock
+      - item: Removed web view stub
+      - item: Removed Dialer app by default in stock (no more duplicates now) 
+      - item: Introduced 4 new packages "core", "omni", "full", "aroma"
+      - item: Updated Google Apps (22nd July) 
+- date: 11 Jul 2019
+  changes:
+      - item: Added Lawnchair 
+      - item: Added Google Drive 
+      - item: Added Google Maps
+      - item: Removed duplicate apps (except Dialer app) 
+      - item: Removed Google Assistant
+      - item: Removed Google Chrome Beta
+      - item: Removed Aosp keyboard
+      - item: included Google stable (beta had theming issues)
+      - item: Updated gcam from PE rom (addon)
+      - item: Latest Google Apps (11th July)
+- date: 02 Jul 2019
+  changes:
+      - item: Changed the base from PE to Opengapps (fixes crashes on few roms and requires clean flash)
+      - item: Fixed duplicate Calendar appearing
+      - item: Added Google webviewstub
+      - item: Added modded Pixel Launcher
+      - item: Removed gcam from stock and basic package to make it generic for all arm64 devices
+      - item: Latest Google Apps (2nd July)
+- date: 25 Jun 2019
+  changes:
+      - item: Fixed FC with Face Unlock
+      - item: Added Google Sounds
+      - item: Added Pixel Launcher
+      - item: Updated YouTube Vanced to latest
+      - item: Updated Google Camera to latest
+      - item: Latest Google Apps (25th June)
+- date: 12 May 2019
+  changes:
+      - item: Added Google Markup
+      - item: Fixed Google Backup and Restore issues
+      - item: Fixed device not compatible message appearing while opening Google Dialer app
+      - item: Updated to latest Google Camera (with Time Lapse feature)
+      - item: Updated to latest version of Google Apps (12th May)
+- date: 27 Apr 2019
+  changes:
+      - item: Signed the build with my key (just like opengapps)
+      - item: Updated PlayGround
+      - item: Updated Google Camera to 6.2.0.24 (from PixelExperience Rom)
+      - item: Updated to latest version of Google Apps (27th April)
+- date: 15 Apr 2019
+  changes:
+      - item: Fixed Setup Wizard FC (tested on Havoc, CrDroid, RR, AOSIP, Los 16. Let me know if you face issues with any other rom)
+      - item: Updated to latest version of Google Apps (15th April)
+- date: 07 Apr 2019
+  changes:
+      - item: Added Setup Wizard in stock gapps for those who wants to restore their backup from google backup.
+      - item: Added ARCore and PlayGround in stock gapps with supported GCam (same as pixel experience rom)
+      - item: Updated to latest version of Google Apps (7th April)
+- date: 30 March 2019
+  changes:
+      - item: Updated to latest version of Google Apps (30th March)
+      - item: Included Digital Wellbeing in basic version of NikGapps
+      - item: Introduced NikGapps Stock (Google Apps Package which replaces stock aosp apps with Google Apps. More details in OP)

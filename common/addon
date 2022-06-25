@@ -1,0 +1,181 @@
+#!/sbin/sh
+
+#OUTFD=$1;
+
+#echo "executing addon" >> $OUTFD
+
+shift 1
+destDir=$system/addon.d
+NikGappsDir=$destDir
+destDir=$NikGappsDir
+dest=$destDir/51-$1".sh"
+fileName=$1
+shift 1
+installSource=$1
+deleteSource=$2
+debloaterSource=$3
+mkdir -p "$destDir"
+TMPDIR=/dev/tmp
+COMMONDIR=$TMPDIR/NikGappsScripts
+if $BOOTMODE; then
+  COMMONDIR=$MODPATH/NikGappsScripts
+  mkdir -p $COMMONDIR
+fi
+addonDir="/sdcard/NikGapps/addonLogs"
+nikGappsAddonLogFile="$addonDir/NikGapps_addon.log"
+nikGappsTestLog="$addonDir/logfiles/NikGapps.log"
+newline='
+'
+
+echo_add_to_log() {
+  echo ""
+  echo "addToLog() {"
+  echo "  echo \"\$(date +%Y_%m_%d_%H_%M_%S): \$1\" >> $nikGappsAddonLogFile"
+  echo "}"
+  echo ""
+}
+
+list_files() {
+  echo ""
+  echo "list_files() {"
+  echo "cat <<EOF"
+
+  if [ -f "$installSource" ]; then
+    OLD_IFS="$IFS"
+    IFS="$(printf '%b_' ' \n')"
+    IFS="${IFS%_}"
+    g=$(grep "install" "$installSource" | cut -d= -f2)
+    for i in $g; do
+      echo "$i"
+    done
+    IFS="$OLD_IFS"
+  fi
+
+  echo "EOF"
+  echo "}"
+  echo ""
+}
+
+list_delete_folders() {
+  echo ""
+  echo "delete_folders() {"
+  echo "cat <<EOF"
+
+  if [ -f "$deleteSource" ]; then
+    OLD_IFS="$IFS"
+    IFS="$(printf '%b_' ' \n')"
+    IFS="${IFS%_}"
+    g=$(grep "delete" "$deleteSource" | cut -d= -f2)
+    for i in $g; do
+      echo "$i"
+    done
+    IFS="$OLD_IFS"
+  fi
+
+  echo "EOF"
+  echo "}"
+  echo ""
+}
+
+list_debloat_folders() {
+  echo ""
+  echo "debloat_folders() {"
+  echo "cat <<EOF"
+
+  if [ -f "$debloaterSource" ]; then
+    OLD_IFS="$IFS"
+    IFS="$(printf '%b_' ' \n')"
+    IFS="${IFS%_}"
+    g=$(grep "debloat" "$debloaterSource" | cut -d= -f2)
+    for i in $g; do
+      echo "$i"
+    done
+    IFS="$OLD_IFS"
+  fi
+
+  echo "EOF"
+  echo "}"
+  echo ""
+}
+
+backup() {
+  echo " backup)"
+  echo "   ui_print \"- Backing up $fileName\""
+  echo "   list_files | while read FILE DUMMY; do"
+  echo "     backup_file \$S/\"\$FILE\""
+  echo "   done"
+  echo " ;;"
+}
+
+restore() {
+  echo " restore)"
+  echo "   ui_print \"- Restoring $fileName\""
+  echo "   list_files | while read FILE REPLACEMENT; do"
+  echo "     R=\"\""
+  echo "     [ -n \"\$REPLACEMENT\" ] && R=\"\$S/\$REPLACEMENT\""
+  echo "     [ -f \"\$C/\$S/\$FILE\" ] && restore_file \$S/\"\$FILE\" \"\$R\""
+  echo "   done"
+  echo "   delete_aosp_apps"
+  echo "   debloat_apps"
+  echo "   for i in \$(list_files); do"
+  echo "     f=\$(get_output_path \"\$S/\$i\")"
+  echo "     chown root:root \"\$f\""
+  echo "     chmod 644 \"\$f\""
+  echo "     chmod 755 \$(dirname \$f)"
+  echo "   done"
+  echo " ;;"
+}
+
+run() {
+  echo " "
+  echo "if [ \"\$execute_config\" = \"0\" ]; then"
+  echo "  if [ -f \"\$S/addon.d/51-$fileName.sh\" ]; then"
+  echo "    ui_print \"- Deleting up $fileName.sh\""
+  echo "    rm -rf \$S/addon.d/51-$fileName.sh"
+  echo "    rm -rf \$T/addon.d/51-$fileName.sh"
+  echo "  fi"
+  echo "  exit 1"
+  echo "fi"
+  echo " "
+  echo "if [ ! -f \"\$S/addon.d/51-$fileName.sh\" ]; then"
+  echo "  test \"\$execute_config\" = \"1\" && CopyFile \"\$0\" \"\$S/addon.d/51-$fileName.sh\""
+  echo "fi"
+  echo " "
+  echo "case \"\$1\" in"
+  backup
+  restore
+  echo "esac"
+}
+
+# Read the config file from (Thanks to xXx @xda)
+ReadConfigValue() {
+  value=$(sed -e '/^[[:blank:]]*#/d;s/[\t\n\r ]//g;/^$/d' "$2" | grep "^$1=" | cut -d'=' -f 2)
+  echo "$value"
+  return $?
+}
+
+header() {
+  echo "#!/sbin/sh"
+  echo "#"
+  echo "# ADDOND_VERSION=3"
+}
+
+for i in $(find $destDir -iname "*$fileName.sh" 2>/dev/null;); do
+  if [ -f "$i" ]; then
+    rm -rf $i
+  fi
+done
+
+header > "$dest"
+cat "$COMMONDIR/header" >> "$dest"
+{
+  echo_add_to_log
+  cat "$COMMONDIR/functions"
+  list_files
+  list_delete_folders
+  list_debloat_folders
+  run
+} >>"$dest"
+chmod 755 "$dest"
+mkdir -p "$addon_scripts_logDir"
+cat "$dest" > "$addon_scripts_logDir/51-$fileName.sh"
