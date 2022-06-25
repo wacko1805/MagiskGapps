@@ -1,7 +1,9 @@
 ![alt text](https://raw.githubusercontent.com/wacko1805/MagiskGapps/assets/images/magisk-3.png "Logo Title Text 1")
+[![Download MagiskGApps](https://img.shields.io/sourceforge/dw/magiskgapps.svg)](https://sourceforge.net/projects/magiskgapps/files/latest/download)
+
 MagiskGApps is a GApps package to be used with Magisk. 
 
-# Android 12 MagiskGApps coming soon!
+# Android 12 MagiskGApps now released
 
 ## Why MagiskGApps?
 
@@ -10,16 +12,11 @@ MagiskGApps is a GApps package to be used with Magisk.
  * Super easy to flash and update
 
 ## Requirements
-- Android 11 
+- Android 11 or 12.1 (In Alpha, 12 coming out tomorrow)
 - 64-bit Architecture 
 
-# Downloads:
-* [Stock](https://sourceforge.net/projects/magiskgapps/files/r/Stock/)
-* [Basic](https://sourceforge.net/projects/magiskgapps/files/r/Basic/)
-* [Core](https://sourceforge.net/projects/magiskgapps/files/r/Core/)
-* [GMS](https://sourceforge.net/projects/magiskgapps/files/r/GMS)
-* [Add-ons](https://sourceforge.net/projects/magiskgapps/files/addons/)
-* There will be no Full or anything above stock due to the file being to big for magisk manager to handle!
+# Download:
+[![Download MagiskGApps](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/magiskgapps/files/)
 
 # Apps:
 <details>
