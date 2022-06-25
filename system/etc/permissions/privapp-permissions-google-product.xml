@@ -122,6 +122,7 @@ privileged Google applications in GMS devices.
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.gms">
+        <permission name="android.permission.INSTALL_LOCATION_TIME_ZONE_PROVIDER_SERVICE"/>
         <permission name="android.permission.COMPANION_APPROVE_WIFI_CONNECTIONS"/>
         <permission name="android.permission.ACCESS_CONTEXT_HUB" />
         <permission name="android.permission.ACCESS_NETWORK_CONDITIONS"/>
