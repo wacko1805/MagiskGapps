@@ -1,7 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/wacko1805/MagiskGapps/assets/images/magisk-3.png "Logo Title Text 1")
 [![Download MagiskGApps](https://img.shields.io/sourceforge/dw/magiskgapps.svg)](https://sourceforge.net/projects/magiskgapps/files/latest/download)
 
-MagiskGApps is a GApps package to be used with Magisk. 
+MagiskGApps is a GApps package to be used with Magisk. MagiskGApps is based on the NikGApps packages, so if NikGApps doesnt work with your ROM, this is most likely not to work on your rom.
 
 # Android 12 MagiskGApps now released
 
