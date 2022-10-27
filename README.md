@@ -10,7 +10,12 @@ MagiskGApps is bases of Nikgapps @ nikgapps.com . The script converts the Nikgap
  * MagiskGApps can be uninstalled, meaning it can be installed temporarily
  * It can be used to change other GApps packages previously installed, meaning a device with core gapps can be changed to stock without wiping the data partition
  * Super easy to flash and update
+ 
+ 
+## Credits
 
+ * [NikGApps](https://nikgapps.com/) by [Nikhil Menghani](https://t.me/inikhilmenghani)
+ *[Zackptg5 for MMT-Extended](https://github.com/Zackptg5/MMT-Extended)
 ## Requirements
 - Android 11+
 - 64-bit Architecture 
