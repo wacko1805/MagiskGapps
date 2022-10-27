@@ -15,7 +15,7 @@ MagiskGApps is bases of Nikgapps @ nikgapps.com . The script converts the Nikgap
 ## Credits
 
  * [NikGApps](https://nikgapps.com/) by [Nikhil Menghani](https://t.me/inikhilmenghani)
- *[Zackptg5 for MMT-Extended](https://github.com/Zackptg5/MMT-Extended)
+ * [Zackptg5 for MMT-Extended](https://github.com/Zackptg5/MMT-Extended)
 ## Requirements
 - Android 11+
 - 64-bit Architecture 
