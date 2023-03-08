@@ -108,6 +108,7 @@ prop_process() {
 # Credits
 ui_print "***************************************"
 ui_print "*      MagiskGApps by @Wacko1805      *"
+ui_print "*  Download latest @ MagiskGApps.com  *"
 ui_print "***************************************"
 ui_print ""
 ui_print "*  Based on NikGApps @ nikgapps.com   *"
