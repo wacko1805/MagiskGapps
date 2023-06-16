@@ -10,6 +10,7 @@ MagiskGApps is bases of Nikgapps @ nikgapps.com . The script converts the Nikgap
  * Works on most AOSP based custom roms
  * Works on most AOSP based OEM roms (Motorolla, asus, etc)
  * DOES NOT work on MIUI.
+ * May or may not work on bloated stock roms, like oneui, coloros etc. This means you use it at your own risk.
 
 ## Why MagiskGApps?
 
