@@ -5,6 +5,12 @@
 # This is the MagiskGApps Creator script
 MagiskGApps is bases of Nikgapps @ nikgapps.com . The script converts the Nikgapps package into a Magisk Module. 
 
+## Compatibility:
+
+ * Works on most AOSP based custom roms
+ * Works on most AOSP based OEM roms (Motorolla, asus, etc)
+ * DOES NOT work on MIUI.
+
 ## Why MagiskGApps?
 
  * MagiskGApps can be uninstalled, meaning it can be installed temporarily
