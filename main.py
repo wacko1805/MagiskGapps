@@ -70,12 +70,6 @@ os.remove("template/module.prop")
 os.remove("gapps.zip")
 shutil.rmtree("AppSet", ignore_errors=True)
 
-# Upload
-srv = pysftp.Connection(host="frs.sourceforge.net", username=SF_user, password=SF_pass)
-print("Uploading to SourceForge")
-
-with srv.cd('/home/frs/project/magiskgapps/'+SF_folder+'/'+SF_version): #chdir to public
-    srv.put('releases/MagiskGApps-'+ version +'.zip') #upload file to nodejs/
 
 # Closes the connection
 srv.close()
