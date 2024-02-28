@@ -1,6 +1,12 @@
 ![alt text](https://raw.githubusercontent.com/wacko1805/MagiskGapps/assets/images/magisk-3.png "Logo Title Text 1")
 [![Download MagiskGApps](https://img.shields.io/sourceforge/dw/magiskgapps.svg)](https://sourceforge.net/projects/magiskgapps/files/latest/download)
 
+# MAGISKGAPPS IS BEING REPLACED BY MAGISKGAPPS MAKER
+MagiskGApps Maker is an online tool that converts a regular GApps package into a MagiskGApps package. 
+
+NikGApps is currently the only supported GApps package. 
+
+Please visit [MagiskGApps.com/maker](https://magiskgapps.com/maker)
 
 # This is the MagiskGApps Creator script
 MagiskGApps is bases of Nikgapps @ nikgapps.com . The script converts the Nikgapps package into a Magisk Module. 
